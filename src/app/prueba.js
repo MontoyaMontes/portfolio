@@ -32,7 +32,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Next.js Example</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
 

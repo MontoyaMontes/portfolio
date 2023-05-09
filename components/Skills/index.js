@@ -104,9 +104,10 @@ export default function Skills({ title, fields }) {
             defaultEndIcon={<div style={{ width: 24 }} />}
         >
             <StyledTreeItem nodeId="1" labelText={title} labelIcon={Label} >
-                {fields?.map(field => {
+                {fields?.map((field, index) => {
                     return (
                         <StyledTreeItem
+                            key={index}
                             nodeId="5"
                             labelText={field.label}
                             labelInfo={getLabel(field.progress)}

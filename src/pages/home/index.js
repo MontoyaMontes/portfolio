@@ -31,7 +31,6 @@ export default function Prueba() {
         <div className={styles.container}>
             <Head>
                 <title>Montoya Montes</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
 
@@ -106,7 +105,7 @@ export default function Prueba() {
 
                         <Grid container spacing={2}>
                             {CURRENT_CONTENT?.projects?.map(project => {
-                                return (<Grid item xs={12} sm={6} md={3}>
+                                return (<Grid item xs={12} sm={6} md={3} key={project.title}>
                                     <CardProject
                                         title={project.title}
                                         date={project.date}
@@ -132,7 +131,7 @@ export default function Prueba() {
 
                             {CURRENT_CONTENT?.skillsSet?.map(skill => {
                                 return (
-                                    <Skills title={skill.title} fields={skill.data} />
+                                    <Skills title={skill.title} fields={skill.data} key={skill.title} />
                                 )
                             })}
 
@@ -151,22 +150,17 @@ export default function Prueba() {
 
                         <ul>
                             <li>
-                                <Link href="mailto:nombre@dominio.com">
+                                <Link href="mailto:montoyamontespi@gmail.com">
                                     Correo electrónico
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://www.linkedin.com/in/tunombre/">
+                                <Link href="https://www.linkedin.com/in/pedro-montoya-montes-8480501a3">
                                     LinkedIn
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://twitter.com/tunombre">
-                                    Twitter
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://github.com/tunombre">
+                                <Link href="https://github.com/montoyamontes">
                                     GitHub
                                 </Link>
                             </li>
