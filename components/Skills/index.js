@@ -5,16 +5,9 @@ import Box from '@mui/material/Box';
 import TreeView from '@mui/lab/TreeView';
 import TreeItem, { treeItemClasses } from '@mui/lab/TreeItem';
 import Typography from '@mui/material/Typography';
-import MailIcon from '@mui/icons-material/Mail';
-import DeleteIcon from '@mui/icons-material/Delete';
 import Label from '@mui/icons-material/Label';
-import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
-import InfoIcon from '@mui/icons-material/Info';
-import ForumIcon from '@mui/icons-material/Forum';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import { LinearProgress } from '@mui/material';
 import Progress from '../Progress';
 
 const StyledTreeItemRoot = styled(TreeItem)(({ theme }) => ({
@@ -58,13 +51,17 @@ function StyledTreeItem(props) {
             label={
                 <Box sx={{ display: 'flex', alignItems: 'center', p: 0.5, pr: 0 }}>
                     <Box component={LabelIcon} color="inherit" sx={{ mr: 1 }} />
-                    <Typography variant="body2" sx={{ fontWeight: 'inherit', flexGrow: 1 }}>
+
+                    <Typography variant="body2" sx={{ fontWeight: 'inherit', marginRight: "1em" }}>
                         {labelText}
-                        {progressBar && progressBar}
                     </Typography>
+
+                    {progressBar}
+
                     <Typography variant="caption" color="inherit">
                         {labelInfo}
                     </Typography>
+
                 </Box>
             }
             style={{
@@ -79,41 +76,40 @@ function StyledTreeItem(props) {
 StyledTreeItem.propTypes = {
     bgColor: PropTypes.string,
     color: PropTypes.string,
-    labelIcon: PropTypes.elementType.isRequired,
     labelInfo: PropTypes.string,
     labelText: PropTypes.string.isRequired,
 };
 
 function getLabel(progress) {
-    if (progress > 0 && progress < 30) {
+    if (progress >= 0 && progress < 30) {
         return "Principiante"
-    } else if (progress > 30 && progress < 60) {
+    } else if (progress >= 30 && progress < 60) {
         return "Medio"
-    } else if (progress > 60 && progress < 100) {
+    } else if (progress >= 60 && progress <= 100) {
         return "Avanzado"
     }
 }
 
-export default function Skills({ title, fields }) {
+export default function Skills({ title, fields, id }) {
     return (
         <TreeView
             aria-label="skills progress"
-            defaultExpanded={['3']}
+            defaultExpanded={['1000']}
             defaultCollapseIcon={<ArrowDropDownIcon />}
             defaultExpandIcon={<ArrowRightIcon />}
             defaultEndIcon={<div style={{ width: 24 }} />}
         >
-            <StyledTreeItem nodeId="1" labelText={title} labelIcon={Label} >
-                {fields?.map((field, index) => {
+            <StyledTreeItem nodeId={id} labelText={title} labelIcon={Label}>
+                {fields?.map((field) => {
                     return (
                         <StyledTreeItem
-                            key={index}
-                            nodeId="5"
+                            key={field.label}
+                            nodeId={field.id}
                             labelText={field.label}
                             labelInfo={getLabel(field.progress)}
                             color="#1a73e8"
                             bgColor="#e8f0fe"
-                            progressBar={< Progress progress={field.progress} />}
+                            progressBar={<Progress progress={field.progress} />}
                         />
                     )
                 })}

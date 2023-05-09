@@ -37,32 +37,31 @@ export const CONTENT = {
         ],
         skillsSet: [
             {
-                title: "FrontEnd", data: [
-                    { label: "HTML", progress: "100" },
-                    { label: "CSS", progress: "90" },
-                    { label: "React", progress: "90" },
-                    { label: "Vue", progress: "40" },
-                    { label: "TypeScript", progress: "80" },
-                    { label: "SCSS/LASS/LESS", progress: "80" },
-                    { label: "Figma", progress: "90" },
+                title: "FrontEnd", id: "1000", data: [
+                    { label: "HTML", progress: 100, id: "1001", },
+                    { label: "CSS", progress: 90, id: '1002', },
+                    { label: "React", progress: 90, id: '1003', },
+                    { label: "Vue", progress: 40, id: '1004', },
+                    { label: "TypeScript", progress: 80, id: '1005', },
+                    { label: "SCSS/LASS/LESS", progress: 80, id: '1006', },
+                    { label: "Figma", progress: 90, id: '1007', },
                 ]
             },
             {
-                title: "BackEnd", data: [
-                    { label: "SQL", progress: "70" },
-                    { label: "MongoDB", progress: "80" },
-                    { label: "REST", progress: "80" },
-                    { label: "MariaDB", progress: "60" },
+                title: "BackEnd", id: '2000', data: [
+                    { label: "SQL", progress: 70, id: '2001', },
+                    { label: "MongoDB", progress: 80, id: '2002', },
+                    { label: "REST", progress: 80, id: '2003', },
+                    { label: "MariaDB", progress: 60, id: '2004', },
                 ]
             },
             {
-                title: "Lenguajes de programaciónn", data: [
-                    { label: "JavaSccript", progress: "90" },
-                    { label: "TypeScript", progress: "85" },
-                    { label: "Java", progress: "80" },
-                    { label: "Python", progress: "90" },
-                    { label: "Go", progress: "80" },
-                    { label: "Racket", progress: "60" },
+                title: "Lenguajes de programaciónn", id: '3000', data: [
+                    { label: "JavaSccript", progress: 90, id: '3001', },
+                    { label: "TypeScript", progress: 85, id: '3002', },
+                    { label: "Java", progress: 80, id: '3003', },
+                    { label: "Python", progress: 90, id: '3004', },
+                    { label: "Go", progress: 80, id: '3005', },
                 ]
             },
         ],

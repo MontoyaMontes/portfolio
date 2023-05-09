@@ -38,7 +38,7 @@ export default function Prueba() {
 
                 <section id="home" className={`${styles.MainSection} ${lightTheme ? styles.darkTheme : styles.hidden}`}>
 
-                    <div container className={styles.info}>
+                    <div className={styles.info}>
                         <div className={styles.titleMain}>
                             <a href="https://www.linkedin.com/in/pedro-montoya-montes-8480501a3/" target="__blank" >
                                 <IconButton>
@@ -61,7 +61,7 @@ export default function Prueba() {
                         <p className={styles.subtitle}>{CURRENT_CONTENT?.home?.section.main?.subtitle}</p>
 
                         <div className={styles.containter_btn_start}>
-                            <Button size='large' variant='contained' color='primary' href="#about" scroll={false} endIcon={<ArrowDownward />}>Empezar</Button>
+                            <Button size='large' variant='contained' color='primary' href="#about" scroll="false" endIcon={<ArrowDownward />}>Empezar</Button>
                         </div>
 
 
@@ -129,9 +129,9 @@ export default function Prueba() {
 
                         <div className={styles.skills__container}>
 
-                            {CURRENT_CONTENT?.skillsSet?.map(skill => {
+                            {CURRENT_CONTENT?.skillsSet?.map((skill) => {
                                 return (
-                                    <Skills title={skill.title} fields={skill.data} key={skill.title} />
+                                    <Skills title={skill.title} fields={skill.data} key={skill.title} id={skill.id} />
                                 )
                             })}
 
