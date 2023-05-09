@@ -39,7 +39,7 @@ export default function Prueba() {
                 <section id="home" className={`${styles.MainSection} ${lightTheme ? styles.darkTheme : styles.hidden}`}>
 
                     <div container className={styles.info}>
-                        <div item xs={12} className={styles.titleMain}>
+                        <div className={styles.titleMain}>
                             <a href="https://www.linkedin.com/in/pedro-montoya-montes-8480501a3/" target="__blank" >
                                 <IconButton>
                                     <LinkedIn className={styles.home__social_icon}></LinkedIn>
