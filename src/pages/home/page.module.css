@@ -156,6 +156,12 @@
   }
 }
 
+@media (max-width: 760px) {
+  .profile_container {
+    display: none;
+  }
+}
+
 
 @media (max-width: 900px) {
   .photo {
@@ -175,7 +181,7 @@
   .MainSection,
   .section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
   }
 

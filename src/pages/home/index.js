@@ -42,13 +42,13 @@ export default function Prueba() {
                         <div className={styles.titleMain}>
                             <a href="https://www.linkedin.com/in/pedro-montoya-montes-8480501a3/" target="__blank" >
                                 <IconButton>
-                                    <LinkedIn className={styles.home__social_icon}></LinkedIn>
+                                    <LinkedIn className={styles.home__social_icon} />
                                 </IconButton>
                             </a>
 
                             <a href="https://github.com/MontoyaMontes/" target="__blank" className={styles.home__social_icon}>
-                                <IconButton className={styles.home__social_icon}>
-                                    <GitHub></GitHub>
+                                <IconButton >
+                                    <GitHub className={styles.home__social_icon} />
                                 </IconButton>
                             </a>
                             <div className={styles.containerRawinbown}>
