@@ -32,8 +32,8 @@ export const CONTENT = {
         projects: [
             { title: "Portafolio web 1", date: "21/03/22", image: "/images/proyecto0.png", text: "Portafolio web 1.0,", fulltext: "Proyecto personal, para implementar CCS+HTML+JS+PHP, se implementó diseño funcional movil y web, con cambio de tema de obscuro-claro", link: "https://montoyamontes.github.io/personal-website/" },
             { title: "Diseño App", date: "01/06/2022", image: "/images/proyecto1.png", text: "Diseño de app de cine", fulltext: "Proyecto para el curso de Google UX: Se implenentó lo aprendido en diseño UX para una app, de venta de dulces de cine", link: "https://montoyamontes.github.io/personal-website/", src: "pdf/Project1.pdf" },
-            { title: "Diseño login", date: "01/07/2022", image: "/images/proyecto2.png", text: "Diseño de login a página web", fulltext: "Proyecto para el curso de Google UX: Diseño de login de una plataforma de estudios", link: "https://montoyamontes.github.io/personal-website/", src: "pdf/Project2.pdf" },
-            { title: "Diseño Wapplet", date: "01/01/23", image: "/images/proyecto3.png", text: "Diseño Wapplet", fulltext: "Proyecto para el curso de Google UX: Diseño de una app de ahorros, aplicando todo lo aprendido", link: "https://montoyamontes.github.io/personal-website/", src: "pdf/Project3.pdf" },
+            { title: "Diseño login", date: "01/07/2022", image: "/images/proyecto2.png", text: "Diseño de login", fulltext: "Proyecto para el curso de Google UX: Diseño de login de una plataforma de estudios", link: "https://montoyamontes.github.io/personal-website/", src: "pdf/Project2.pdf" },
+            { title: "Diseño Wapplet", date: "01/01/23", image: "/images/proyecto3.png", text: "Diseño UX Wapplet", fulltext: "Proyecto para el curso de Google UX: Diseño de una app de ahorros, aplicando todo lo aprendido", link: "https://montoyamontes.github.io/personal-website/", src: "pdf/Project3.pdf" },
         ],
         skillsSet: [
             {

@@ -71,8 +71,9 @@ export default function Prueba() {
 
                 </section>
 
-                <section id="about" refProp={myRef} className={`${styles.section} ${lightTheme ? styles.darkTheme : styles.hidden}`}>
+                <section id="about" refProp={myRef} className={`${styles.section} ${styles.about} ${lightTheme ? styles.darkTheme : styles.hidden}`}>
                     <div className={styles.info}>
+
                         <Grid container>
 
                             <Grid item xs={12} md={8}>
@@ -90,7 +91,7 @@ export default function Prueba() {
                                 />
 
                                 <div className={styles.containter_btn} >
-                                    <Button variant='contained' color='primary' startIcon={<CloudDownload />} download="montoya_cv.pdf" href="/pdf/CV_v3_6.pdf"> Descargar CV</Button>
+                                    <Button variant='contained' color='primary' startIcon={<CloudDownload />} download="MontoyaMontes-CV.pdf" href="/pdf/MONTOYA    _CV.pdf"> Descargar CV</Button>
                                 </div>
                             </Grid>
                         </Grid>
@@ -98,7 +99,7 @@ export default function Prueba() {
                     </div>
                 </section>
 
-                <section id="projects" className={`${styles.section} ${lightTheme ? styles.darkTheme : styles.hidden}`}>
+                <section id="projects" className={`${styles.section} ${styles.projects} ${lightTheme ? styles.darkTheme : styles.hidden}`}>
                     <div className={styles.info}>
                         <h2 className={styles.titleSection}>{CURRENT_CONTENT?.home?.section.projects?.title}</h2>
                         <p className={styles.subtitle}>{CURRENT_CONTENT?.home?.section.projects?.subtitle}</p>
